@@ -22,15 +22,17 @@ public class MouseInteraction : MonoBehaviour
         if(Physics.Raycast(ray, out hit) && hit.rigidbody != null)
         {
 
-            hit.rigidbody.AddForce(new Vector3(0, 2, 0), ForceMode.Impulse);
-            //hit.rigidbody.AddForceAtPosition(new Vector3(0, 2, 0),hit.point, ForceMode.Impulse);
-            //if (lastHitName != hit.collider.name)
-            //{
-            //    lastHitName = hit.collider.name;
-            //    Debug.Log(lastHitName);
-            //}
+            //hit.rigidbody.AddForce(new Vector3(0, 2, 0), ForceMode.Impulse);
+            hit.rigidbody.AddForceAtPosition(new Vector3(0, 2, 0),hit.point, ForceMode.Impulse);
 
-            //on click das der 
+        }
+
+        if (Physics.Raycast(ray, out hit) && hit.rigidbody != null && Input.GetMouseButton(0))
+        {
+
+            //hit.rigidbody.AddForce(new Vector3(0, 2, 0), ForceMode.Impulse);
+            hit.rigidbody.AddForceAtPosition(new Vector3(0, 30, 0), hit.point, ForceMode.Impulse);
+
         }
     }
 }
