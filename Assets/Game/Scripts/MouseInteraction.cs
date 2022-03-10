@@ -27,12 +27,21 @@ public class MouseInteraction : MonoBehaviour
 
         }
 
-        if (Physics.Raycast(ray, out hit) && hit.rigidbody != null && Input.GetMouseButton(0))
+        if (Physics.Raycast(ray, out hit) && hit.rigidbody != null && Input.GetMouseButtonDown(0))
         {
 
             //hit.rigidbody.AddForce(new Vector3(0, 2, 0), ForceMode.Impulse);
             hit.rigidbody.AddForceAtPosition(new Vector3(0, 30, 0), hit.point, ForceMode.Impulse);
 
         }
+
+      //  if (Physics.Raycast(ray, out hit) && hit.rigidbody != null && Input.GetMouseButton(0))
+      //  {
+      //
+      //      hit.rigidbody.transform.position(new Vector3(Input.mousePosition.x, 0, 0));
+      //
+      //  }
+
+
     }
 }
