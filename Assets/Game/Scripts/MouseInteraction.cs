@@ -23,7 +23,7 @@ public class MouseInteraction : MonoBehaviour
         {
 
             //hit.rigidbody.AddForce(new Vector3(0, 2, 0), ForceMode.Impulse);
-            hit.rigidbody.AddForceAtPosition(new Vector3(0, 1, 0),hit.point, ForceMode.Impulse);
+            hit.rigidbody.AddForceAtPosition(new Vector3(0, 2, 0),hit.point, ForceMode.Impulse);
 
         }
 
