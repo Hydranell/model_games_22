@@ -6,6 +6,7 @@ public class FollowTarget : MonoBehaviour
 {
 
     [SerializeField] private GameObject Target;
+    [SerializeField] private GameObject Center;
     [SerializeField] private float speed = 1.5f;
 
 
@@ -20,6 +21,8 @@ public class FollowTarget : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, speed * Time.deltaTime);
+
+ 
     
     }
 }
