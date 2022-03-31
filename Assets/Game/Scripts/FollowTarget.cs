@@ -22,7 +22,7 @@ public class FollowTarget : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, speed * Time.deltaTime);
 
- 
+ /// Here vektorstuff
     
     }
 }
