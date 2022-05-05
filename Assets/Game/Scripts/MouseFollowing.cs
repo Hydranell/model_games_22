@@ -7,6 +7,7 @@ public class MouseFollowing : MonoBehaviour
 
     public Transform ball;
 
+
     void Start()
     {
 
@@ -26,5 +27,7 @@ public class MouseFollowing : MonoBehaviour
             ball.GetComponent<Rigidbody>().AddForce(dir * 4);
             //hit.rigidbody.AddForce(new Vector3(1, 0 , 1), ForceMode.Impulse);
         }
+
     }
+
 }
