@@ -12,12 +12,13 @@ public class SpringTightener : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (
-            //Collison mit Target == true
-            )
-        { 
-            GetComponent(SpringJoint).spring = 1000;
-        }
+   {
+        /*   if (
+              //Collison mit target == true
+              )
+          { 
+              GetComponent(SpringJoint).spring = 1000; 
+          }
+      */
     }
 }
