@@ -9,7 +9,7 @@ public class ChangeMaterial : MonoBehaviour
     // put the second material here.
     public Material material2;
     bool FirstMaterial = true;
-    bool SecondndMaterial = false;
+    bool SecondMaterial = false;
     void Start()
     {
         transform.GetComponent<MeshRenderer>().material = material1;
@@ -20,14 +20,15 @@ public class ChangeMaterial : MonoBehaviour
         if (FirstMaterial)
         {
             transform.GetComponent<MeshRenderer>().material = material2;
-            SecondndMaterial = true;
+            SecondMaterial = true;
             FirstMaterial = false;
         }
-        else if (SecondndMaterial)
+        else if (SecondMaterial)
         {
+
             transform.GetComponent<MeshRenderer>().material = material1;
             FirstMaterial = true;
-            SecondndMaterial = false;
+            SecondMaterial = false;
         }
     }
 }
