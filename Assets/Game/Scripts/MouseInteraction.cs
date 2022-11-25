@@ -31,7 +31,7 @@ public class MouseInteraction : MonoBehaviour
         {
 
             //hit.rigidbody.AddForce(new Vector3(0, 2, 0), ForceMode.Impulse);
-            hit.rigidbody.AddForceAtPosition(new Vector3(0, 30, 0), hit.point, ForceMode.Impulse);
+            hit.rigidbody.AddForceAtPosition(new Vector3(0, 15, 0), hit.point, ForceMode.Impulse);
 
         }
 
