@@ -15,6 +15,14 @@ public class ChangeMaterial : MonoBehaviour
         transform.GetComponent<MeshRenderer>().material = material1;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<ChangeMaterial>() != null)
+        {
+            GetComponent<Rigidbody>().AddForce(Vector3.up * 10f, ForceMode.Impulse);
+        }
+    }
+
     void OnMouseUp()
     {
         if (FirstMaterial)
